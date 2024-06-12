@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>번개장터 클론 코딩</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon" 
+    href="https://blog.kakaocdn.net/dn/cqS9rW/btq0jNM4FSr/D6mnUOzywrN8IkyXoWemPK/img.jpg"> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+</head>
+<body>
+    <div class="top_header"> 
+        <a href="#"><img src="C:\Users\cjw02\OneDrive\바탕 화면\image\icon1.png"/>앱다운로드</a> 
+        <a href="#"><img src="C:\Users\cjw02\OneDrive\바탕 화면\image\icon2.png"/>즐겨찾기</i></a>
+        <div style="float:right"><a href="#">로그인/회원가입</a> <a href="#">내상점</a></div>
+        
+    </div>
+    <hr>
+    <div class="bottom_header">
+        <img 
+        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5373%2F2021%2F09%2F14%2F0000019237_001_20210917112234888.jpg&type=l340_165"
+        style="float:left;width:180px; height: 65px; padding-top: 30px"
+        />
+        <div class="search">
+            <input type="text" 
+            placeholder="상품명, 지역명, @상점명 입력"
+            style="position: relative; left:50px; top:40px; width:400px; height:20px;">
+            <img src="data:image/png;base64,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">
+        </div>
+        <div class="top_list">
+            <h5 style="float: right;">
+                <ul id="toplist">
+                    <li><a href="#"><img src="C:\Users\cjw02\OneDrive\바탕 화면\image\icon3.png"/>판매하기</a></li> |
+                    <li><a href="#"><img src="C:\Users\cjw02\OneDrive\바탕 화면\image\icon4.png"/>내상점</a></li> |
+                    <li><a href="#"><img src="C:\Users\cjw02\OneDrive\바탕 화면\image\icon5.png"/>번개톡</a></li>
+                </ul>
+            </h5>
+        </div>
+        <div style="clear:both"></div>
+        <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\icon6.png"/>
+        <a id="sellcenter" href="#">번개장터 판매자센터</a><img id= sellcenterimg src="C:\Users\cjw02\OneDrive\바탕 화면\image\icon7.png"/>
+        <aside class="zzim">
+            <div id="zzim"><p>찜한상품<img style= "position: absoulte; height: 20px;" src="C:\Users\cjw02\OneDrive\바탕 화면\image\zzim.png"/></p></div>
+            <div id="recent"><p>최근본상품</p><img style= "position: absoulte; height: 100px;" src="C:\Users\cjw02\OneDrive\바탕 화면\image\last.png"/></div>
+            <div id="popular"><p>TOP</p></div>
+        </aside>
+    </div>
+    
+    <section class="main_top">
+        <div class="banner">
+            <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\banner1.png"/></div>
+            <!--<div><img src="C:\Users\cjw02\OneDrive\바탕 화면\image\banner2.png"/></div>
+            <div><img src="C:\Users\cjw02\OneDrive\바탕 화면\image\banner3.png"/></div> !-->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <!--<img class="banner" src="C:\Users\cjw02\OneDrive\바탕 화면\image\banner3.png"/>
+        <img class="banner" src="C:\Users\cjw02\OneDrive\바탕 화면\image\banner4.png"/>
+        <img class="banner" src="C:\Users\cjw02\OneDrive\바탕 화면\image\banner5.png"/>
+        <img class ="banner" src="C:\Users\cjw02\OneDrive\바탕 화면\image\banner6.png"/> !-->
+        <div class="qr">
+            <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\qrcode.png"/>
+        </div>
+    </section>
+    
+    <div class="main_bottom">
+        <p><h2>오늘의 상품 추천</h2></p>
+        <div class="itemlist">
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item1.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item2.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item3.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item4.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item5.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item6.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item7.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item8.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item9.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+            <div class="product">
+                <div class="item">
+                    <img src="C:\Users\cjw02\OneDrive\바탕 화면\image\item10.png"/>
+                </div>
+                <div class="price">
+                    10000원
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

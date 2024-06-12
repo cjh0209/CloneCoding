@@ -1,0 +1,10 @@
+.city ul{
+    list-style: none;
+  }
+
+  .city{
+    background-color: lightpink;
+  }
+.container{
+    background-color: aliceblue;
+}
